@@ -15,13 +15,13 @@ namespace ESGanalyzer.Backend.Controllers {
         }
 
         [HttpPost("analyze")]
-        public async Task<IActionResult> AnalyzeDocx([FromForm] IFormFile file) {
+        public async Task<IActionResult> AnalyzeDocx(IFormFile file) {
             if (file == null || Path.GetExtension(file.FileName)?.ToLower() != ".docx") {
                 return BadRequest("Only .docx files are supported.");
             }
 
             string text = await _parseService.ExtractTextAsync(file);
-            return Ok(_ruleBasedAnalyzer.Analyze(text));
-        } 
+            return Ok(_ruleBasedAnalyzer.Analyze(text).GetTotalScore());
+        }
     }
-}
+    }
