@@ -52,7 +52,9 @@ namespace ESGanalyzer.Backend
 
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IParseService, ParseService>();
-            builder.Services.AddScoped<ICriterionAnalyzer, CriterionA_ScopeEmissions>();
+            builder.Services.AddScoped<IRuleBasedAnalyzer, RuleBasedAnalyzer>();
+            builder.Services.AddScoped<ICriterionAnalyzer, CriterionA_RB>();
+
             //builder.Services.AddScoped<ICriterionAnalyzer, CriterionB_StandardReferences>();
             //builder.Services.AddScoped<ICriterionAnalyzer, CriterionC_NumericConsistency>();
             //builder.Services.AddScoped<ICriterionAnalyzer, CriterionD_ReductionTargets>();
