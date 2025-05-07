@@ -1,5 +1,6 @@
 ﻿namespace ESGanalyzer.Backend.Services {
     public interface IParseService {
-        Task<string> ExtractTextAsync(IFormFile file);
+        Task<string> ExtractTextFromDOCXAsync(IFormFile file);
+        Task<string> ExtractTextFromPDFAsync(IFormFile file);
     }
 }

@@ -1,7 +1,7 @@
 ﻿using ESGanalyzer.Backend.Models;
 
 namespace ESGanalyzer.Backend.Services.Analysis {
-    public interface IRuleBasedAnalyzer {
+    public interface IAnalyzer {
         public ESGAnalysisResult Analyze(string text);
     }
 }
