@@ -40,5 +40,8 @@ namespace ESGanalyzer.Backend.Services {
 
             return JwtTokenGenerator.GenerateToken(user.Id, user.Email!, _config);
         }
+
+
+
     }
 }
