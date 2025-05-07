@@ -1,7 +1,9 @@
 
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using ESGanalyzer.Backend.Data;
 using ESGanalyzer.Backend.Services;
 using ESGanalyzer.Backend.Services.Analysis;
+using ESGanalyzer.Backend.Services.Analysis.RuleBased;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -52,14 +54,16 @@ namespace ESGanalyzer.Backend
 
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IParseService, ParseService>();
-            builder.Services.AddScoped<IRuleBasedAnalyzer, RuleBasedAnalyzer>();
-            builder.Services.AddScoped<ICriterionAnalyzer, CriterionA_RB>();
-
-            //builder.Services.AddScoped<ICriterionAnalyzer, CriterionB_StandardReferences>();
-            //builder.Services.AddScoped<ICriterionAnalyzer, CriterionC_NumericConsistency>();
-            //builder.Services.AddScoped<ICriterionAnalyzer, CriterionD_ReductionTargets>();
-            //builder.Services.AddScoped<ICriterionAnalyzer, CriterionE_ClimateRisk>();
-            //builder.Services.AddScoped<ICriterionAnalyzer, CriterionF_EfficiencyIndicators>();
+            builder.Services.AddScoped<IAnalyzer, Analyzer>();
+            builder.Services.AddScoped<ICriterions, C1PolicyStrategyAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C4EmissionsScopeAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C5EmissionsBoundaryAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C6CalculationStandardAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C7GwpSourcesAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C8EmissionsTrendAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C9IntensityIndicatorAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C11UnitCorrectnessAnalyzer>();
+            builder.Services.AddScoped<ICriterions, C12KeywordPresenceAnalyzer>();
 
             builder.Services.Configure<IdentityOptions>(options =>
             {
