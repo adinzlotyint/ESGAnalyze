@@ -2,6 +2,6 @@
 
 namespace ESGanalyzer.Backend.Services.Analysis {
     public interface IAnalyzer {
-        public AnalysisResponse Analyze(string text);
+        public AnalysisResponse Analyze(string reportText, AnalysisResponse result);
     }
 }

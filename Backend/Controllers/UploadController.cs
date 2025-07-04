@@ -4,6 +4,7 @@ using ESGanalyzer.Backend.Services;
 using ESGanalyzer.Backend.Services.Analysis;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http.Timeouts;
 
 namespace ESGanalyzer.Backend.Controllers {
 
@@ -20,6 +21,7 @@ namespace ESGanalyzer.Backend.Controllers {
         }
 
         [HttpPost("analyze/txt")]
+        [RequestTimeout(30_000)]
         public async Task<IActionResult> AnalyzeTxt(IFormFile file) {
             if (file == null || Path.GetExtension(file.FileName)?.ToLower() != ".txt") {
                 return BadRequest("Only .txt files are supported.");
@@ -29,18 +31,22 @@ namespace ESGanalyzer.Backend.Controllers {
             using (var reader = new StreamReader(file.OpenReadStream())) {
                 text = await reader.ReadToEndAsync();
             }
+            AnalysisResponse result = new();
+            _analyzer.Analyze(text, result);
 
-            AnalysisResponse result = _analyzer.Analyze(text);
             return Ok(result);
         }
         [DisableRequestSizeLimit]
         [HttpPost("analyze/pdf")]
+        [RequestTimeout(30_000)]
         public async Task<IActionResult> AnalyzePdf(IFormFile file) {
             if (file == null || Path.GetExtension(file.FileName)?.ToLower() != ".pdf")
                 return BadRequest("Only .pdf files are supported.");
 
             string text = await _parseService.ExtractTextFromPDFAsync(file);
-            AnalysisResponse result = _analyzer.Analyze(text);
+            AnalysisResponse result = new();
+            _analyzer.Analyze(text, result);
+
             return Ok(result);
         }
     }

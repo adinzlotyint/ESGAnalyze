@@ -1,4 +1,5 @@
 using ESGanalyzer.Backend.Data;
+using ESGanalyzer.Backend.Models.Configuration;
 using ESGanalyzer.Backend.Services;
 using ESGanalyzer.Backend.Services.Analysis;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using System.Text.Json;
 
 namespace ESGanalyzer.Backend
 {
@@ -49,9 +51,18 @@ namespace ESGanalyzer.Backend
                     };
                 });
 
+            var configFilePath = Path.Combine(builder.Environment.ContentRootPath, "Data", "regex.json");
+            var jsonString = File.ReadAllText(configFilePath);
+            var analysisConfig = JsonSerializer.Deserialize<AnalysisConfiguration>(jsonString) ?? throw new 
+                    InvalidOperationException("Could not load or parse the regex.json configuration file. Application cannot start.");
+
+            builder.Services.AddSingleton(analysisConfig);
+
+            builder.Services.AddRequestTimeouts();
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IParseService, ParseService>();
             builder.Services.AddScoped<IAnalyzer, Analyzer>();
+            builder.Services.AddScoped<ICriterias, Criterias>();
 
             builder.Services.Configure<IdentityOptions>(options =>
             {

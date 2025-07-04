@@ -7,15 +7,17 @@ using UglyToad.PdfPig.Content;
 namespace ESGanalyzer.Backend.Services {
     public class ParseService : IParseService {
         public async Task<string> ExtractTextFromPDFAsync(IFormFile file) {
-            using var stream = file.OpenReadStream();
-            using var pdf = PdfDocument.Open(stream);
+            return await Task.Run(() => {
+                using var stream = file.OpenReadStream();
+                using var pdf = PdfDocument.Open(stream);
 
-            var builder = new StringBuilder();
-            foreach (Page page in pdf.GetPages()) {
-                builder.AppendLine(page.Text);
-            }
+                var builder = new StringBuilder();
+                foreach (Page page in pdf.GetPages()) {
+                    builder.AppendLine(page.Text);
+                }
 
-            return builder.ToString();
+                return builder.ToString();
+            });
         }
-        }
+    }
 }
