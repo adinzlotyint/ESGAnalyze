@@ -18,13 +18,17 @@ namespace ESGanalyzer.Backend.Controllers {
             _analyzer = analyzer;
         }
 
-        [HttpPost("analyze/docx")]
-        public async Task<IActionResult> AnalyzeDocx(IFormFile file) {
-            if (file == null || Path.GetExtension(file.FileName)?.ToLower() != ".docx") {
-                return BadRequest("Only .docx files are supported.");
+        [HttpPost("analyze/txt")]
+        public async Task<IActionResult> AnalyzeTxt(IFormFile file) {
+            if (file == null || Path.GetExtension(file.FileName)?.ToLower() != ".txt") {
+                return BadRequest("Only .txt files are supported.");
             }
 
-            string text = await _parseService.ExtractTextFromDOCXAsync(file);
+            string text;
+            using (var reader = new StreamReader(file.OpenReadStream())) {
+                text = await reader.ReadToEndAsync();
+            }
+
             ESGAnalysisResult result = _analyzer.Analyze(text);
             return Ok(result);
         }
