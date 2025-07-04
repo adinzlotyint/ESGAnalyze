@@ -1,19 +1,9 @@
-﻿using ESGanalyzer.Backend.Models;
+﻿using ESGanalyzer.Backend.DTOs;
 
 namespace ESGanalyzer.Backend.Services.Analysis {
     public class Analyzer : IAnalyzer {
-        private readonly IEnumerable<ICriterions> _analyzers;
-
-        public Analyzer(IEnumerable<ICriterions> analyzers) {
-            _analyzers = analyzers.ToList();
-        }
-
-        public ESGAnalysisResult Analyze(string reportText) {
-            var result = new ESGAnalysisResult();
-
-            foreach (var analyzer in _analyzers) {
-                analyzer.Evaluate(reportText, result);
-            }
+        public AnalysisResponse Analyze(string reportText) {
+            var result = new AnalysisResponse();
 
             return result;
         }

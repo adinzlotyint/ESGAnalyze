@@ -1,7 +1,7 @@
-﻿using ESGanalyzer.Backend.Models;
+﻿using ESGanalyzer.Backend.DTOs;
 
 namespace ESGanalyzer.Backend.Services.Analysis {
     public interface IAnalyzer {
-        public ESGAnalysisResult Analyze(string text);
+        public AnalysisResponse Analyze(string text);
     }
 }

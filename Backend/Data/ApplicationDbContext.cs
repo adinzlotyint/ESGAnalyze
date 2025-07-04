@@ -8,5 +8,8 @@ namespace ESGanalyzer.Backend.Data {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) {
         }
+
+        public DbSet<AnalysisReport> AnalysisReport { get; set; }
+
     }
 }

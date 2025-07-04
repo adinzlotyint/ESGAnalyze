@@ -1,4 +1,5 @@
 ﻿using ESGanalyzer.Backend.Models;
+using ESGanalyzer.Backend.DTOs;
 using ESGanalyzer.Backend.Services;
 using ESGanalyzer.Backend.Services.Analysis;
 using Microsoft.AspNetCore.Authorization;
@@ -29,7 +30,7 @@ namespace ESGanalyzer.Backend.Controllers {
                 text = await reader.ReadToEndAsync();
             }
 
-            ESGAnalysisResult result = _analyzer.Analyze(text);
+            AnalysisResponse result = _analyzer.Analyze(text);
             return Ok(result);
         }
         [DisableRequestSizeLimit]
@@ -39,7 +40,7 @@ namespace ESGanalyzer.Backend.Controllers {
                 return BadRequest("Only .pdf files are supported.");
 
             string text = await _parseService.ExtractTextFromPDFAsync(file);
-            ESGAnalysisResult result = _analyzer.Analyze(text);
+            AnalysisResponse result = _analyzer.Analyze(text);
             return Ok(result);
         }
     }
