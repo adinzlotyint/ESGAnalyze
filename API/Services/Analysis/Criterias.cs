@@ -1,4 +1,4 @@
-﻿using ESGanalyzer.Backend.DTOs;
+﻿using ESGanalyzer.Shared.DTOs;
 using ESGanalyzer.Backend.Models.Configuration;
 using System.Globalization;
 using System.Text.RegularExpressions;

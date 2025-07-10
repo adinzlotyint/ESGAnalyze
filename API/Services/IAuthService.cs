@@ -1,4 +1,4 @@
-﻿using ESGanalyzer.Backend.DTOs;
+﻿using ESGanalyzer.Shared.DTOs;
 
 namespace ESGanalyzer.Backend.Services {
     public interface IAuthService {

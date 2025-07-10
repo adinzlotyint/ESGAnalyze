@@ -1,5 +1,5 @@
 ﻿using ESGanalyzer.Backend.Models;
-using ESGanalyzer.Backend.DTOs;
+using ESGanalyzer.Shared.DTOs;
 using ESGanalyzer.Backend.Services;
 using ESGanalyzer.Backend.Services.Analysis;
 using Microsoft.AspNetCore.Authorization;

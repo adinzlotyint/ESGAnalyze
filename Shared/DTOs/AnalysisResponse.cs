@@ -1,4 +1,4 @@
-﻿namespace ESGanalyzer.Backend.DTOs {
+﻿namespace ESGanalyzer.Shared.DTOs {
     public class AnalysisResponse {
         public double Criteria1 { get; set; }
         public double Criteria2 { get; set; }

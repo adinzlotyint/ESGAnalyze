@@ -1,4 +1,4 @@
-﻿using ESGanalyzer.Backend.DTOs;
+﻿using ESGanalyzer.Shared.DTOs;
 using ESGanalyzer.Backend.Exceptions;
 using ESGanalyzer.Backend.Helpers;
 using Microsoft.AspNetCore.Identity;
