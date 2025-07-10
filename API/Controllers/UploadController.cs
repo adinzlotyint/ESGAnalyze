@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http.Timeouts;
 namespace ESGanalyzer.Backend.Controllers {
 
     [ApiController]
-    [Authorize]
+    //[Authorize]
     [Route("/[controller]")]
     public class UploadController : ControllerBase {
         private readonly IParseService _parseService;
