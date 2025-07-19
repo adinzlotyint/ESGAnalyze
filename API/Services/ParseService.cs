@@ -1,6 +1,5 @@
-﻿using DocumentFormat.OpenXml.Packaging;
-using DocumentFormat.OpenXml.Wordprocessing;
-using System.Text;
+﻿using System.Text;
+using System.Text.RegularExpressions;
 using UglyToad.PdfPig;
 using UglyToad.PdfPig.Content;
 
@@ -15,6 +14,9 @@ namespace ESGanalyzer.Backend.Services {
                 foreach (Page page in pdf.GetPages()) {
                     builder.AppendLine(page.Text);
                 }
+
+                string rawText = builder.ToString();
+                string cleanedText = Regex.Replace(rawText, @"\s+", " ").Trim();
 
                 return builder.ToString();
             });
