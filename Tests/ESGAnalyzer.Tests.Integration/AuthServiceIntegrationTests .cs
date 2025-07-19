@@ -1,6 +1,6 @@
 using Azure.Core;
 using ESGanalyzer.Backend.Data;
-using ESGanalyzer.Backend.DTOs;
+using ESGanalyzer.Shared.DTOs;
 using ESGanalyzer.Backend.Exceptions;
 using ESGanalyzer.Backend.Services;
 using FluentAssertions;
