@@ -22,7 +22,7 @@ namespace ESGanalyzer.API.Services {
                 string rawText = builder.ToString();
                 string cleanedText = Regex.Replace(rawText, @"\s+", " ").Trim();
 
-                return builder.ToString();
+                return cleanedText.ToString();
             });
         }
     }
