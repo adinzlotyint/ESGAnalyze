@@ -1,9 +1,9 @@
 ﻿using ESGanalyzer.Shared.DTOs;
-using ESGanalyzer.Backend.Models.Configuration;
+using ESGanalyzer.API.Models.Configuration;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace ESGanalyzer.Backend.Services.Analysis {
+namespace ESGanalyzer.API.Services.Analysis {
     public class Criterias : ICriterias {
         private readonly AnalysisConfiguration _config;
         private readonly ILogger<Criterias> _logger;

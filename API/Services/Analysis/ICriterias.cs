@@ -1,7 +1,7 @@
 ﻿using ESGanalyzer.Shared.DTOs;
-using ESGanalyzer.Backend.Models.Configuration;
+using ESGanalyzer.API.Models.Configuration;
 
-namespace ESGanalyzer.Backend.Services.Analysis {
+namespace ESGanalyzer.API.Services.Analysis {
     public interface ICriterias {
         void Evaluate(string reportText, AnalysisResponse result);
     }

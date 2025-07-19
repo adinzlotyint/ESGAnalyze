@@ -1,4 +1,4 @@
-﻿namespace ESGanalyzer.Backend.Exceptions {
+﻿namespace ESGanalyzer.API.Exceptions {
     public class RegistrationFailedException : Exception {
         public RegistrationFailedException() : base("Registration failed. Please check your input.") { }
 

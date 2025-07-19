@@ -1,6 +1,6 @@
 ﻿using ESGanalyzer.Shared.DTOs;
 
-namespace ESGanalyzer.Backend.Services.Analysis {
+namespace ESGanalyzer.API.Services.Analysis {
     public class Analyzer : IAnalyzer {
         private readonly ICriterias _criterias;
 

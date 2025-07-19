@@ -1,4 +1,4 @@
-﻿namespace ESGanalyzer.Backend.Exceptions {
+﻿namespace ESGanalyzer.API.Exceptions {
     public class LoginFailedException : Exception {
         public LoginFailedException() : base("Login failed. Please check your input.") { }
 

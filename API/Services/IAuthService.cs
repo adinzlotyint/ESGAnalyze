@@ -1,6 +1,6 @@
 ﻿using ESGanalyzer.Shared.DTOs;
 
-namespace ESGanalyzer.Backend.Services {
+namespace ESGanalyzer.API.Services {
     public interface IAuthService {
         Task<string> RegisterAsync(RegisterRequest request);
         Task<string> LoginAsync(LoginRequest request);

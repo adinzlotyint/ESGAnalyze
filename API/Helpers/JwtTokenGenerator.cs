@@ -4,7 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace ESGanalyzer.Backend.Helpers {
+namespace ESGanalyzer.API.Helpers {
     public static class JwtTokenGenerator {
         public static string GenerateToken(string userId, string email, IConfiguration config) {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]!));

@@ -1,4 +1,4 @@
-﻿namespace ESGanalyzer.Backend.Models {
+﻿namespace ESGanalyzer.API.Models {
     public class AnalysisReport {
         public int Id { get; set; }
         public required string ReportName { get; set; }

@@ -1,8 +1,8 @@
 ﻿using ESGanalyzer.Shared.DTOs;
-using ESGanalyzer.Backend.Services;
+using ESGanalyzer.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ESGanalyzer.Backend.Controllers {
+namespace ESGanalyzer.API.Controllers {
     [ApiController]
     [Route("/[controller]")]
     public class AuthController : ControllerBase {

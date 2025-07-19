@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ESGanalyzer.Backend.Models.Configuration {
+namespace ESGanalyzer.API.Models.Configuration {
     public class AnalysisConfiguration {
         [JsonPropertyName("Criteria3")]
         public required Dictionary<string, ScoreRule> Criteria3 { get; set; }

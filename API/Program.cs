@@ -1,7 +1,7 @@
-using ESGanalyzer.Backend.Data;
-using ESGanalyzer.Backend.Models.Configuration;
-using ESGanalyzer.Backend.Services;
-using ESGanalyzer.Backend.Services.Analysis;
+using ESGanalyzer.API.Data;
+using ESGanalyzer.API.Models.Configuration;
+using ESGanalyzer.API.Services;
+using ESGanalyzer.API.Services.Analysis;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Text.Json;
 
-namespace ESGanalyzer.Backend
+namespace ESGanalyzer.API
 {
     public class Program
     {

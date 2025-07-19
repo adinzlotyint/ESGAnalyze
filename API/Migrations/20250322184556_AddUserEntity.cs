@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ESGanalyzer.Backend.Migrations
+namespace ESGanalyzer.API.Migrations
 {
     /// <inheritdoc />
     public partial class AddUserEntity : Migration

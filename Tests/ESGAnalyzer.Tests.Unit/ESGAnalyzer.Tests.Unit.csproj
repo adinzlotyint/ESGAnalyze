@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\API\ESGanalyzer.API.csproj" />
-    <ProjectReference Include="..\..\Backend\ESGanalyzer.Backend.csproj" />
     <ProjectReference Include="..\..\Shared\Shared.csproj" />
   </ItemGroup>
 

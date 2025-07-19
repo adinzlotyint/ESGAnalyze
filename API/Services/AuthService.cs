@@ -1,9 +1,9 @@
 ﻿using ESGanalyzer.Shared.DTOs;
-using ESGanalyzer.Backend.Exceptions;
-using ESGanalyzer.Backend.Helpers;
+using ESGanalyzer.API.Exceptions;
+using ESGanalyzer.API.Helpers;
 using Microsoft.AspNetCore.Identity;
 
-namespace ESGanalyzer.Backend.Services {
+namespace ESGanalyzer.API.Services {
     public class AuthService : IAuthService {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IConfiguration _config;
