@@ -1,8 +1,8 @@
 using Azure.Core;
-using ESGanalyzer.Backend.Data;
+using ESGanalyzer.API.Data;
 using ESGanalyzer.Shared.DTOs;
-using ESGanalyzer.Backend.Exceptions;
-using ESGanalyzer.Backend.Services;
+using ESGanalyzer.API.Exceptions;
+using ESGanalyzer.API.Services;
 using FluentAssertions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
