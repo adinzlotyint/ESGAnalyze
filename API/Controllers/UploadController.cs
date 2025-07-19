@@ -1,12 +1,11 @@
-﻿using ESGanalyzer.Backend.Models;
-using ESGanalyzer.Shared.DTOs;
-using ESGanalyzer.Backend.Services;
-using ESGanalyzer.Backend.Services.Analysis;
-using Microsoft.AspNetCore.Authorization;
+﻿using ESGanalyzer.Shared.DTOs;
+using ESGanalyzer.API.Services;
+using ESGanalyzer.API.Services.Analysis;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http.Timeouts;
+using ESGanalyzer.API.Exceptions;
 
-namespace ESGanalyzer.Backend.Controllers {
+namespace ESGanalyzer.API.Controllers {
 
     [ApiController]
     //[Authorize]
@@ -43,7 +42,14 @@ namespace ESGanalyzer.Backend.Controllers {
             if (file == null || Path.GetExtension(file.FileName)?.ToLower() != ".pdf")
                 return BadRequest("Only .pdf files are supported.");
 
-            string text = await _parseService.ExtractTextFromPDFAsync(file);
+            using var stream = file.OpenReadStream();
+            string text;
+            try {
+                text = await _parseService.ExtractTextFromPDFAsync(stream);
+            } catch (ParsingFailedException e) {
+                return BadRequest(e);
+            }
+
             AnalysisResponse result = new();
             _analyzer.Analyze(text, result);
 
