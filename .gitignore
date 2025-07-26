@@ -32,6 +32,7 @@ bin/
 # === Python ===
 AIService/venv/
 __pycache__
+AIService/wyniki.txt
 
 
 # === ENV files ===
