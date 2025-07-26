@@ -31,6 +31,8 @@ bin/
 
 # === Python ===
 AIService/venv/
+__pycache__
+
 
 # === ENV files ===
 .env
