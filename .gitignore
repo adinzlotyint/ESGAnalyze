@@ -17,7 +17,7 @@
 *.njsproj
 *.sln
 
-# === BACKEND (ASP.NET) ===
+# === ASP.NET ===
 *.pdb
 *.dll
 *.exe
@@ -29,12 +29,8 @@
 obj/
 bin/
 
-# === FRONTEND (React, Vite, Next) ===
-node_modules/
-dist/
-dist-ssr/
-build/
-out/
+# === Python ===
+AIService/venv/
 
 # === ENV files ===
 .env
