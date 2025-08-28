@@ -1,0 +1,245 @@
+Do wykonania w tej sesji: 30 prób.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Initializing global attention on CLS token...
+[1216/1216 2:25:23, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102660	0.592207
+200	No log	0.083195	0.662340
+300	No log	0.065447	0.755528
+400	No log	0.052853	0.806245
+500	0.076500	0.047519	0.834683
+600	0.076500	0.040097	0.861286
+700	0.076500	0.034386	0.884033
+800	0.076500	0.033461	0.890963
+900	0.076500	0.032104	0.894759
+1000	0.025600	0.029985	0.901850
+1100	0.025600	0.028734	0.906202
+1200	0.025600	0.028170	0.904163
+[I 2025-08-26 23:57:19,542] Trial 0 finished with value: 0.9041625781021257 and parameters: {'learning_rate': 2.2106899831932417e-05, 'weight_decay': 0.15910997111952396}. Best is trial 0 with value: 0.9041625781021257.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 5:33:13, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102822	0.439026
+200	No log	0.103682	0.593114
+300	No log	0.102915	0.206762
+400	No log	0.103934	0.451069
+500	0.105500	0.104077	0.593114
+600	0.105500	0.102931	0.279113
+700	0.105500	0.103143	0.398916
+800	0.105500	0.103478	0.398916
+900	0.105500	0.102682	0.593114
+1000	0.104400	0.103092	0.488288
+1100	0.104400	0.102533	0.398916
+1200	0.104400	0.102572	0.503742
+[I 2025-08-27 05:30:40,053] Trial 1 finished with value: 0.5037424117360519 and parameters: {'learning_rate': 5.41104949493051e-05, 'weight_decay': 0.1590099559551004}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 3:23:01, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102952	0.503742
+200	No log	0.103822	0.593114
+300	No log	0.102877	0.279113
+400	No log	0.103966	0.451069
+500	0.105500	0.104041	0.593114
+600	0.105500	0.102843	0.279113
+700	0.105500	0.103140	0.398916
+800	0.105500	0.103503	0.398916
+900	0.105500	0.102676	0.593114
+1000	0.104400	0.103115	0.488288
+1100	0.104400	0.102548	0.398916
+1200	0.104400	0.102576	0.503742
+[I 2025-08-27 08:53:48,002] Trial 2 finished with value: 0.5037424117360519 and parameters: {'learning_rate': 5.264882752444336e-05, 'weight_decay': 0.038673261382804094}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 6:31:44, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.101002	0.593306
+200	No log	0.096882	0.628573
+300	No log	0.076412	0.665916
+400	No log	0.065080	0.762283
+500	0.082900	0.055886	0.799837
+600	0.082900	0.045382	0.846862
+700	0.082900	0.041578	0.855378
+800	0.082900	0.037191	0.879272
+900	0.082900	0.034540	0.884150
+1000	0.035300	0.033940	0.883036
+1100	0.035300	0.031902	0.886399
+1200	0.035300	0.031463	0.887128
+[I 2025-08-27 15:25:40,944] Trial 3 finished with value: 0.8871276921021184 and parameters: {'learning_rate': 1.2373776893610104e-05, 'weight_decay': 0.03200836840941146}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 3:51:57, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.101019	0.596367
+200	No log	0.091954	0.647981
+300	No log	0.073557	0.710343
+400	No log	0.062801	0.784456
+500	0.082000	0.053196	0.814944
+600	0.082000	0.045633	0.843195
+700	0.082000	0.041087	0.857018
+800	0.082000	0.037484	0.872407
+900	0.082000	0.034467	0.881757
+1000	0.033800	0.034184	0.884939
+1100	0.033800	0.032194	0.889873
+1200	0.033800	0.031513	0.891358
+[I 2025-08-27 19:17:46,545] Trial 4 finished with value: 0.891358335302713 and parameters: {'learning_rate': 1.2581729886967711e-05, 'weight_decay': 0.15787806944605465}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:35 < 2:00:36, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.100025	0.612285
+[I 2025-08-27 19:28:27,201] Trial 5 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:57 < 2:04:50, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.100866	0.606041
+[I 2025-08-27 19:39:29,163] Trial 6 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:46 < 2:02:36, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102567	0.594514
+[I 2025-08-27 19:50:19,528] Trial 7 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 2:09:30, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.103075	0.503742
+200	No log	0.104170	0.593114
+300	No log	0.102790	0.368485
+400	No log	0.103481	0.256870
+500	0.105200	0.103997	0.593114
+600	0.105200	0.102738	0.398916
+700	0.105200	0.102881	0.398916
+800	0.105200	0.103490	0.488288
+900	0.105200	0.102653	0.593114
+1000	0.104300	0.102948	0.488288
+1100	0.104300	0.102524	0.398916
+1200	0.104300	0.102561	0.503742
+[I 2025-08-27 21:59:55,103] Trial 8 finished with value: 0.5037424117360519 and parameters: {'learning_rate': 3.118883060061997e-05, 'weight_decay': 0.15883576688961984}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:54 < 2:04:07, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102350	0.596323
+[I 2025-08-27 22:10:53,388] Trial 9 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 2:14:24, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.103033	0.398916
+200	No log	0.103552	0.593114
+300	No log	0.102987	0.206762
+400	No log	0.104247	0.451069
+500	0.105700	0.104036	0.593114
+600	0.105700	0.103131	0.206762
+700	0.105700	0.103294	0.503742
+800	0.105700	0.103464	0.398916
+900	0.105700	0.102672	0.593114
+1000	0.104500	0.103183	0.488288
+1100	0.104500	0.102552	0.279113
+1200	0.104500	0.102582	0.593114
+[I 2025-08-28 00:25:22,536] Trial 10 finished with value: 0.5931143924123805 and parameters: {'learning_rate': 6.98356907156416e-05, 'weight_decay': 0.0862439278532837}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 300/1216 32:45 < 1:40:40, 0.15 it/s, Epoch 1/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102813	0.503742
+200	No log	0.103732	0.585850
+300	No log	0.101339	0.503372
+[I 2025-08-28 00:58:11,837] Trial 11 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:54 < 2:04:14, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102917	0.590088
+[I 2025-08-28 01:09:10,596] Trial 12 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:54 < 2:04:08, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102893	0.522702
+[I 2025-08-28 01:20:08,900] Trial 13 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 2:09:36, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102798	0.439026
+200	No log	0.103750	0.593114
+300	No log	0.102725	0.335363
+400	No log	0.103579	0.345815
+500	0.105200	0.103804	0.593114
+600	0.105200	0.102428	0.363390
+700	0.105200	0.102879	0.400768
+800	0.105200	0.103292	0.488288
+900	0.105200	0.102646	0.488288
+1000	0.104200	0.103169	0.488288
+1100	0.104200	0.102588	0.279113
+1200	0.104200	0.102549	0.503742
+[I 2025-08-28 03:29:49,649] Trial 14 finished with value: 0.5037424117360519 and parameters: {'learning_rate': 6.863859299999816e-05, 'weight_decay': 0.04400775980971938}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 300/1216 32:12 < 1:38:59, 0.15 it/s, Epoch 1/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102987	0.503742
+200	No log	0.104103	0.593114
+300	No log	0.102829	0.368485
+[I 2025-08-28 04:02:05,927] Trial 15 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:55 < 2:04:20, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.103509	0.593114
+[I 2025-08-28 04:13:05,280] Trial 16 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 300/1216 32:48 < 1:40:51, 0.15 it/s, Epoch 1/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102855	0.398916
+200	No log	0.103756	0.593114
+300	No log	0.102731	0.368485
+[I 2025-08-28 04:45:58,116] Trial 17 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 100/1216 10:55 < 2:04:19, 0.15 it/s, Epoch 0/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102210	0.579064
+[I 2025-08-28 04:56:57,384] Trial 18 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 300/1216 33:24 < 1:42:42, 0.15 it/s, Epoch 1/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102831	0.439026
+200	No log	0.103803	0.593114
+300	No log	0.102898	0.368485
+[I 2025-08-28 05:30:26,306] Trial 19 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1216/1216 2:12:04, Epoch 8/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102877	0.503742
+200	No log	0.103443	0.596012
+300	No log	0.102561	0.308137
+400	No log	0.104232	0.451069
+500	0.105200	0.103882	0.593114
+600	0.105200	0.102752	0.279113
+700	0.105200	0.102949	0.398916
+800	0.105200	0.103505	0.488288
+900	0.105200	0.102653	0.488288
+1000	0.104300	0.103025	0.488288
+1100	0.104300	0.102567	0.279113
+1200	0.104300	0.102547	0.503742
+[I 2025-08-28 07:42:35,643] Trial 20 finished with value: 0.5037424117360519 and parameters: {'learning_rate': 6.1032445400860767e-05, 'weight_decay': 0.02468442802010043}. Best is trial 1 with value: 0.5037424117360519.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[ 300/1216 32:48 < 1:40:49, 0.15 it/s, Epoch 1/8]
+Step	Training Loss	Validation Loss	F1 Macro
+100	No log	0.102728	0.439026
+200	No log	0.103941	0.503742
+300	No log	0.102789	0.488288
+[I 2025-08-28 08:15:27,641] Trial 21 pruned.
+Some weights of LongformerForSequenceClassification were not initialized from the model checkpoint at sdadas/polish-longformer-base-4096 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
