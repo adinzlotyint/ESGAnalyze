@@ -1,3 +1,6 @@
+Live Demo: https://huggingface.co/spaces/Adinzlotyint/ESGAnalyze
+Note: For optimal performance, it is advised to clone this app and run the application locally on a high-end GPU.
+
 This repository is a part of my master's thesis research project. Its purpose was to train and evaluate a multi-label classification model capable of analyzing Polish corporate sustainability reports based on selected ESRS standards.
 
 ## Problem description
