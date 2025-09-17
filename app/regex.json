@@ -1,0 +1,111 @@
+﻿{
+  "Criteria3": {
+    "1.0": {
+      "A": {
+        "Include": [
+          "\\b(zakres|scope)\\s*(1|I)\\b",
+          "\\b(zakres|scope)\\s*(2|II)\\b",
+          "\\b(zakres|scope)\\s*(3|III)\\b",
+          "\\blocation[- ]base(?:d)?\\b",
+          "\\bmarket[- ]base(?:d)?\\b",
+          "\\b(?:Kat|Kategoria|Cat|Category).{0,3}?(?:[1-9]|1[0-5])\\b"
+        ],
+        "Exclude": [
+          "\\bzakres\\s*3\\b.{0,50}?(pominięty|wyłączony|nie.{0,5}(ujęty|uwzględniony|raportowany|brany pod uwagę))",
+          "\\bzakres\\s*3\\b.{0,50}?(opcjonalnie|wyłącznie.{0,10}na.{0,10}życzenie|udostępniany.{0,10}na.{0,10}żądanie)",
+          "\\bzakres\\s*3\\b.{0,50}?(brak.{0,10}danych|szacunek|ograniczone.{0,10}informacje)",
+          "\\b(ślad|emisje).{0,50}?\\bzakres\\s*3\\b.{0,50}?(nie.{0,5}(pełny|zupełny|kompletny|reprezentatywny))",
+          "\\b(scope\\s*3|zakres\\s*3)\\b.{0,50}?(excluded|not.{0,10}included|available.{0,10}upon.{0,10}request|optional)"
+        ]
+      },
+      "B": {
+        "Include": [
+          "\\b(zakres|scope)\\s*(1|I)\\b",
+          "\\b(zakres|scope)\\s*(2|II)\\b",
+          "\\b(zakres|scope)\\s*(3|III)\\b",
+          "\\blocation[- ]base(?:d)?\\b",
+          "\\bmarket[- ]base(?:d)?\\b",
+          "\\b(scope.{0,10}3|zakres(?:ie)?.{0,10}3)\\b.{0,300}?\\b(zakup.{0,40}surowc|środki trwałe|środk[óo]w? trwałych|transport.{0,40}dystrybucj|odpady|podróże służbowe|dojazdy pracownik|leasing|aktywa dzierżawione|przetwarzanie.{0,40}produkt|użytkowanie.{0,40}produkt|post[ęe]powanie.{0,40}(po|ze).{0,20}produkt|franczyz[ay]|inwestycj[ae]|inwestycje kapitałowe|materiały.{0,10}biur)\\b"
+        ],
+        "Exclude": [
+          "\\bzakres\\s*3\\b.{0,50}?(pominięty|wyłączony|nie.{0,5}(ujęty|uwzględniony|raportowany|brany pod uwagę))",
+          "\\bzakres\\s*3\\b.{0,50}?(opcjonalnie|wyłącznie.{0,10}na.{0,10}życzenie|udostępniany.{0,10}na.{0,10}żądanie)",
+          "\\bzakres\\s*3\\b.{0,50}?(brak.{0,10}danych|szacunek|ograniczone.{0,10}informacje)",
+          "\\b(ślad|emisje).{0,50}?\\bzakres\\s*3\\b.{0,50}?(nie.{0,5}(pełny|zupełny|kompletny|reprezentatywny))",
+          "\\b(scope\\s*3|zakres\\s*3)\\b.{0,50}?(excluded|not.{0,10}included|available.{0,10}upon.{0,10}request|optional)"
+        ]
+      }
+    },
+    "0.75": {
+      "A": {
+        "Include": [
+          "\\b(zakres|scope)\\s*(1|I)\\b",
+          "\\b(zakres|scope)\\s*(2|II)\\b",
+          "\\b(zakres|scope)\\s*(3|III)\\b",
+          "\\b(?:Kat|Kategoria|Cat|Category).{0,3}?(?:[1-9]|1[0-5])\\b",
+          "\\b(location|market)[- ]base(?:d)?\\b"
+        ],
+        "Exclude": [
+          "\\bzakres\\s*3\\b.{0,50}?(pominięty|wyłączony|nie.{0,5}(ujęty|uwzględniony|raportowany|brany pod uwagę))",
+          "\\bzakres\\s*3\\b.{0,50}?(opcjonalnie|wyłącznie.{0,10}na.{0,10}życzenie|udostępniany.{0,10}na.{0,10}żądanie)",
+          "\\bzakres\\s*3\\b.{0,50}?(brak.{0,10}danych|szacunek|ograniczone.{0,10}informacje)",
+          "\\b(ślad|emisje).{0,50}?\\bzakres\\s*3\\b.{0,50}?(nie.{0,5}(pełny|zupełny|kompletny|reprezentatywny))",
+          "\\b(scope\\s*3|zakres\\s*3)\\b.{0,50}?(excluded|not.{0,10}included|available.{0,10}upon.{0,10}request|optional)"
+        ]
+      },
+      "B": {
+        "Include": [
+          "\\b(zakres|scope)\\s*(1|I)\\b",
+          "\\b(zakres|scope)\\s*(2|II)\\b",
+          "\\b(zakres|scope)\\s*(3|III)\\b",
+          "\\b(location|market)[- ]base(?:d)?\\b",
+          "\\b(scope.{0,10}3|zakres(?:ie)?.{0,10}3)\\b.{0,300}?\\b(zakup.{0,40}surowc|środki trwałe|środk[óo]w? trwałych|paliw.{0,40}zakres.{0,5}[12]|emisj.{0,40}zakres.{0,5}[12]|transport.{0,40}dystrybucj|odpady|podróże służbowe|dojazdy pracownik|leasing|aktywa dzierżawione|przetwarzanie.{0,40}produkt|użytkowanie.{0,40}produkt|post[ęe]powanie.{0,40}(po|ze).{0,20}produkt|franczyz[ay]|inwestycj[ae]|inwestycje kapitałowe|materiały.{0,10}biur)\\b"
+        ],
+        "Exclude": [
+          "\\bzakres\\s*3\\b.{0,50}?(pominięty|wyłączony|nie.{0,5}(ujęty|uwzględniony|raportowany|brany pod uwagę))",
+          "\\bzakres\\s*3\\b.{0,50}?(opcjonalnie|wyłącznie.{0,10}na.{0,10}życzenie|udostępniany.{0,10}na.{0,10}żądanie)",
+          "\\bzakres\\s*3\\b.{0,50}?(brak.{0,10}danych|szacunek|ograniczone.{0,10}informacje)",
+          "\\b(ślad|emisje).{0,50}?\\bzakres\\s*3\\b.{0,50}?(nie.{0,5}(pełny|zupełny|kompletny|reprezentatywny))",
+          "\\b(scope\\s*3|zakres\\s*3)\\b.{0,50}?(excluded|not.{0,10}included|available.{0,10}upon.{0,10}request|optional)"
+        ]
+      }
+    },
+    "0.5": {
+      "A": {
+        "Include": [
+          "\\b(zakres|scope)\\s*(1|I)\\b",
+          "\\b(zakres|scope)\\s*(2|II)\\b",
+          "\\blocation[- ]base(?:d)?\\b",
+          "\\bmarket[- ]base(?:d)?\\b"
+        ]
+      }
+    },
+    "0.25": {
+      "A": {
+        "Include": [
+          "(zakres|scope)\\s*(1|I)\\b",
+          "(zakres|scope)\\s*(2|II)\\b"
+        ]
+      }
+    }
+  },
+  "Criteria5": {
+    "1.0": {
+      "A": {
+        "Include": [
+          "(\\bIPCC\\b|\\bDEFRA\\b|\\becoinvent\\b|\\bGEMIS\\b|\\bBEIS\\b|\\bEPA\\b|\\bADEME\\b|\\bCircular\\s+Ecology\\b|\\bClimatiq\\b|\\bCBAM\\b|\\bEXIOBASE\\b|\\bGLEC\\b|\\bGreenview\\b|\\bUBA\\b|\\bIEA\\b|\\bWRAP\\b|\\bKOBIZE\\b)",
+          "(wskaźnik(i|ów|a|ach)?\\s+(emisyjności|emisji)|współczynnik\\w*\\s+(emisji|GWP)|emission\\s+factor|\\bGWP\\b|Global\\s+Warming\\s+Potential)"
+        ]
+      }
+    }
+  },
+  "Criteria9": {
+    "1.0": {
+      "A": {
+        "Include": [
+          "(CO2e|CO2-eq|CO2eq|CO₂e|ekwiwalent(?:u)?\\s+CO2|eCO2|eCO₂|eqCO2|eqCO₂|CO2\\s+ekwiwalent)"
+        ]
+      }
+    }
+  }
+}

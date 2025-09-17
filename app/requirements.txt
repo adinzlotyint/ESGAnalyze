@@ -1,0 +1,7 @@
+gradio
+huggingface_hub
+PyMuPDF
+pandas
+transformers
+torch
+sentencepiece
